@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Outfit:wght@500&display=swap');
+
+body{
+  font-family: 'Outfit', sans-serif;
+  background-color: #fffcf2;
+}  
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  max-width: 100%;
+}
+
+nav{
+  height: 60px;
+  background: #fffcf2;
+}
+
+nav img{
+  width: 100px;
+  position: absolute;
+  top: 1px;
+  left: 5%;
+}
+
+.logo{
+  padding-top: 35px;
+  width: 60px;
+  height: 80px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 45px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 10px;
+}
+
+nav ul li a{
+  position: relative;
+  color: #403D39;
+  font-size: 19px;
+  text-decoration: none;
+}
+.dark-mode a{
+  color: #fffcf2;
+}
+
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #eb5e28;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.01s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left ;
+}
+.dark-mode{
+  border: none;
+  background-color: #fffcf2;
+  font-size: 1px;
+}
+.fa-regular{
+  color: #403D39;
+}
+
+
+
+/*-----------------hire section--------------*/
+.hire{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color:  #fffcf2;
+  padding-bottom: 5rem;
+  padding-left: 5%;
+}
+.hire-text{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hire-text h1{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #403D39;
+}
+.hire-text h2{
+  font-size: 5.3rem;
+  font-weight: 700;
+  line-height: 6rem;
+  color: #403D39;
+}
+.hire-text h3{
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #EB5E28;
+}
+.hire-text h4{
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #403D39;
+}
+.hire-text .btn-2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.square{
+	height: 5px;
+	width: 12px;
+	display: inline-block;
+	background: #000000;
+	margin: 1px 0;
+}
+
+.line-1{
+	width: 12px;
+	height: 5px;
+	background: #000000;
+	display: inline-block;
+
+}
+.line-2{
+	width: 80px;
+	height: 1px;
+	background: #000000;
+	display: inline-block;
+}
+.line-3 {
+	width: 60px;
+	height: 1px;
+	background: #000000;
+	display: inline-block;
+}
+.line{
+	line-height: 8px;
+    margin-top: 0px;
+}
+.btn-2{
+	width: 220px;
+	height: 70px;
+	color: rgb(255, 255, 255);
+	background-color: #EB5E28;
+	border: none;
+	border-radius: 40px;
+	box-shadow: inset 0 0 0 0 #000000;
+	transition: ease-out 0.3s;
+	font-size: 1.5rem;
+	outline: none;
+}
+.btn-2:hover{
+	box-shadow: inset 350px 0 0 0 #000000;
+	cursor: pointer;
+	color: #ffea00;
+}
+
+
+
+
+
+
+/*-----------------skillset section--------------*/
+
+
+
+.skills{
+  overflow: auto;
+  background-color:  #252422;
+  padding-bottom: 6rem;
+  padding-left: 100px;
+}
+.skill-text{
+    font-size: 200%;
+    text-align: left;
+    padding-top: 2%;
+}
+#title1{
+	height: auto;
+  color: #fffcf2;
+  font-size: 70px;
+}
+.row{
+	display: flex;
+	padding-top: 100px;
+	padding-bottom: 50px;
+  justify-content: space-around;
+  
+}
+
+#skills{
+  padding-top: 10px;
+  height: auto;
+  text-align: center;
+}
+/* Clear floats after the columns */
+.row-2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.skill1{
+  	height: 76px;
+  	width: 76px;
+}
+.skill2{
+  height: 76px;
+  width: 76px;
+}
+.skill3{
+  height: 76px;
+  width: 76px;
+}
+.skill4{
+  height: 76px;
+  width: 76px;
+}
+.skill5{
+  height: 67px;
+  width: 120px;
+}
+
+
+
+
+
+/*-----------------about section--------------*/
+.about{
+  overflow: hidden;
+  background-color:  #1f1e1d;
+  padding-bottom: 6rem;
+  text-align: right;
+  padding-right: 100px;
+}
+#title2{
+	height: auto;
+  color: #fffcf2;
+  font-size: 70px;
+  padding-bottom: 30px;
+}
+#about-p1{
+	color: #fffcf2;
+  font-size: 15px;
+}
+#about-h2{
+	color: #fffcf2;
+  font-size: 27px;
+}
+#about-h3{
+	color: #fffcf2;
+  font-size: 27px;
+}
+.about-text{
+  float: right;
+  width: 50%;
+  padding: 100px;
+}
+.square-1{
+	height: 5px;
+	width: 12px;
+	display: inline-block;
+	background: #fffcf2;
+	margin: 1px 0;
+}
+.line-11{
+	width: 12px;
+	height: 5px;
+	background: #fffcf2;
+	display: inline-block;
+
+}
+.line-22{
+	width: 80px;
+	height: 1px;
+	background: #fffcf2;
+	display: inline-block;
+}
+.line-33 {
+	width: 60px;
+	height: 1px;
+	background: #fffcf2;
+	display: inline-block;
+}
+.line-10{
+	line-height: 8px;
+    margin-top: 0px;
+}
+.about-img{
+  width: 350px;
+  height: 480px;
+}
+
+
+/*--------------------project section----------------*/
+.projects{
+  height: 75vh;
+  background-color: #252422;
+  padding-left: 100px;
+}
+#title3{
+  height: auto;
+  color: #fffcf2;
+  font-size: 70px;
+  padding-bottom: 30px;
+}
+.project-text{
+  padding-top: 2%;
+}
+.projects-row{
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.card-1 {
+  /*float: left;*/
+  max-width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  flex-basis: 33.333%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.card-1 > img {
+  margin-bottom: .75rem;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 85%;
+}
+/*--------------------contact section----------------*/
+.contact{
+  height: 60vh;
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------media queries--------------*/
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+	/* For mobile tablets: */
+  .hire-text{
+    width: 50%;
+  }
+  .hire-text h1{
+    font-size: 1.5rem;
+    line-height: 4.5rem;
+  }
+  .hire-text h2{
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+    padding-bottom: 20px;
+    padding: auto;
+    margin: auto;
+  }
+  .hire{
+    flex-direction: column-reverse;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  .hire-image{
+    padding-bottom: 4rem;
+    margin: auto;
+  }
+  .hire-text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+	/* For mobile phones: */
+  header{
+    height: 9rem;
+  }
+  .logo{
+    margin: 0;
+  }
+  nav{
+    display: block;
+    text-align: center;
+  }
+  .nav-ul{
+    justify-content: center;
+  }
+  
+  .hire-text h1{
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+    padding-bottom: 20px;
+  }
+  .hire-text h2{
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+    padding-bottom: 20px;
+    padding: auto;
+    margin: auto;
+  }
+  .hire{
+    flex-direction: column-reverse;
+    margin: auto;
+    padding: 20px;
+  }
+  .hire-image{
+    padding-bottom: 4rem;
+  }
+  .hire-text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0rem;
+  }
+  .skill-text{
+    padding-top: 2.5rem;
+  }
+  #title1{
+    font-size: 40px;
+  }
+  .skill1{
+  	height: 46px;
+  	width: 46px;
+}
+.skill2{
+  height: 46px;
+  width: 46px;
+}
+.skill3{
+  height: 46px;
+  width: 46px;
+}
+.skill4{
+  height: 46px;
+  width: 46px;
+}
+.skill5{
+  height: 40px;
+  width: 75px;
+}
+/*-----about-------*/
+.about{
+  overflow: hidden;
+  background-color:  #1f1e1d;
+  padding-bottom: 6rem;
+  text-align: right;
+  padding-right: 5px;
+}
+#title2{
+	height: auto;
+  color: #fffcf2;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+#about-p1{
+	color: #fffcf2;
+  font-size: 15px;
+}
+#about-h2{
+	color: #fffcf2;
+  font-size: 27px;
+}
+#about-h3{
+	color: #fffcf2;
+  font-size: 27px;
+}
+.about-text{
+  float: right;
+  width: 50%;
+  padding: 20px;
+}
+.square-1{
+	height: 5px;
+	width: 12px;
+	display: inline-block;
+	background: #fffcf2;
+	margin: 1px 0;
+}
+.line-11{
+	width: 12px;
+	height: 5px;
+	background: #fffcf2;
+	display: inline-block;
+
+}
+.line-22{
+	width: 80px;
+	height: 1px;
+	background: #fffcf2;
+	display: inline-block;
+}
+.line-33 {
+	width: 60px;
+	height: 1px;
+	background: #fffcf2;
+	display: inline-block;
+}
+.line-10{
+	line-height: 8px;
+    margin-top: 0px;
+}
+.about-img{
+  width: 350px;
+  height: 480px;
+}
+
+  }
